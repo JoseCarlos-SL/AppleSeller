@@ -223,7 +223,13 @@ nav a:hover { color: var(--accent); }
   align-items: center;
   gap: 4px;
   margin-top: 6px;
-  transition: gap 0.2s;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.22s ease, transform 0.22s ease, gap 0.2s;
+}
+.product-card:hover .product-link {
+  opacity: 1;
+  transform: translateY(0);
 }
 .product-link:hover { gap: 8px; }
 
